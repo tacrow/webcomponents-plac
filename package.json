@@ -1,0 +1,53 @@
+{
+  "name": "webcomponents-plac",
+  "version": "1.0.0",
+  "description": "webcomponents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "production": "webpack -p",
+    "develop": "webpack -d",
+    "watch": "webpack -d --watch",
+    "scripts": "browserify ./src/js/app.js -t babelify -o ./bundle/bundle.js"
+  },
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-commonjs"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tacrow/webcomponents-plac.git"
+  },
+  "keywords": [
+    "webcomponents"
+  ],
+  "author": "tacrow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tacrow/webcomponents-plac/issues"
+  },
+  "homepage": "https://github.com/tacrow/webcomponents-plac#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^14.5.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "watch": "^1.0.2",
+    "webpack": "^3.8.1",
+    "webpack-notifier": "^1.5.0"
+  },
+  "dependencies": {
+    "webcomponentsjs": "^1.0.2",
+    "wicg-inert": "^1.1.6"
+  }
+}

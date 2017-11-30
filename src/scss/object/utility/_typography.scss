@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*
+ * object/utility/_typography
+ */
+$i: 8;
+@while $i <= 25 {
+  .u-fs#{$i} {
+    $i: $i / 10;//一旦小数にしてremにいれてから
+    font-size: #{$i}rem;
+  }
+  $i: $i * 10 + 1;//整数に戻して繰り返す
+}
